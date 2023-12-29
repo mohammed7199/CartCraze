@@ -1,0 +1,548 @@
+[
+  {
+    "_id": {
+      "$oid": "6576e113620e3764bbb981dd"
+    },
+    "name": "Adidas Running Shoes",
+    "description": "Experience ultimate comfort and performance with these high-tech Adidas running shoes.",
+    "price": 5899,
+    "image": "1702300379836-Ultrabounce_Shoes_Blue_HP5783_HM1.avif",
+    "categories": [
+      "Footwear"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T10:14:43.460Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T13:12:59.838Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6576e143b9dd079c3b396ecc"
+    },
+    "name": "Elegant Pearl Necklace",
+    "description": "Add a touch of sophistication to your attire with this elegant pearl necklace.",
+    "price": 89999,
+    "image": "1702300436472-1-0819687001682597565.webp",
+    "categories": [
+      "jewelry"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T10:15:31.863Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T13:13:56.474Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6576e16ab9dd079c3b396ed0"
+    },
+    "name": "Smart Coffee Maker",
+    "description": "Brew your favorite coffee with ease using this smart and efficient coffee maker.",
+    "price": 143499,
+    "image": "1702300455775-smart-grinder_480x480.webp",
+    "categories": [
+      "Appliances"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T10:16:10.756Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T13:14:15.778Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6576e1adb9dd079c3b396ed4"
+    },
+    "name": "Recycled Laptop Sleeve",
+    "description": "Protect your laptop in style with this sleek and durable leather laptop sleeve.",
+    "price": 10899,
+    "image": "1702289837024-0A1A0034_600x.jpg",
+    "categories": [
+      "Accessories",
+      "Bags"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T10:17:17.029Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T10:17:17.029Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6576e1dcb9dd079c3b396ed8"
+    },
+    "name": "Vintage Polaroid Camera",
+    "description": "Capture memories in retro style with this vintage Polaroid instant camera.",
+    "price": 52999,
+    "image": "1702289884985-06RIfWw40ih8PSN0AuLhm0U-1.webp",
+    "categories": [
+      "Electronics",
+      "Photography"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T10:18:04.991Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T10:18:04.991Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6576e209b9dd079c3b396edc"
+    },
+    "name": "Organic Lavender Essential Oil",
+    "description": "Relax and unwind with the soothing aroma of organic lavender essential oil.",
+    "price": 9599,
+    "image": "1702289929592-1_1296x.webp",
+    "categories": [
+      "Wellness",
+      "Aromatherapy"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T10:18:49.596Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T10:18:49.596Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6576e236fe739b9f622e0de6"
+    },
+    "name": "Contemporary Wall Art",
+    "description": "Transform your living space with this contemporary and visually stunning wall art.",
+    "price": 71599,
+    "image": "1702289974958-mazy_frame_wall_art_set_of_3_.webp",
+    "categories": [
+      "Home Decor",
+      "Art"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T10:19:34.970Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T10:19:34.970Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6576e266fe739b9f622e0dea"
+    },
+    "name": "Wireless Charging Pad",
+    "description": "Charge your devices effortlessly with this sleek wireless charging pad.",
+    "price": 18899,
+    "image": "1702290022607-1_P_1602565802608.webp",
+    "categories": [
+      "Electronics",
+      "Accessories"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T10:20:22.610Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T10:20:22.610Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6576e296fe739b9f622e0dee"
+    },
+    "name": "Ultra-Lightweight Backpack",
+    "description": "Carry your essentials with ease using this ultra-lightweight and stylish backpack.",
+    "price": 10399,
+    "image": "1702290070190-hiker-wearing-ultralight-backpack.webp",
+    "categories": [
+      "Accessories",
+      "Bags"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T10:21:10.199Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T10:21:10.199Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6576e2ccfe739b9f622e0df2"
+    },
+    "name": "Oppai One Punch Man Hoodie",
+    "description": "Show off your favorite anime with this stylish and comfortable hoodie featuring iconic characters.",
+    "price": 9499,
+    "image": "1702290124816-oppai-saitama-one-punch-man-anime-manga-3d-zip-hoodiexxyty.jpg",
+    "categories": [
+      "Anime"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T10:22:04.820Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T10:22:04.820Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6576e2f8fe739b9f622e0df6"
+    },
+    "name": "Demon Slayer Art Print",
+    "description": "Decorate your space with these vibrant art prints featuring scenes from popular anime series.",
+    "price": 5999,
+    "image": "1702290168435-718CuMByftL.jpg",
+    "categories": [
+      "Anime",
+      "Home Decor"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T10:22:48.440Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T10:22:48.440Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6576e325fe739b9f622e0dfa"
+    },
+    "name": "Guts Berserk Black Swordsman",
+    "description": "Collectible figure of your favorite anime character, meticulously crafted for fans and collectors.",
+    "price": 11299,
+    "image": "1702290213743-guts-1-759x1024.jpg",
+    "categories": [
+      "Anime"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T10:23:33.746Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T10:23:33.746Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6576e350fe739b9f622e0dfe"
+    },
+    "name": "Anime Mouse Pad Tanjiro and Rengoku",
+    "description": "Upgrade your gaming setup with a high-quality anime-themed mouse pad featuring stunning artwork.",
+    "price": 8399,
+    "image": "1702290256008-71blZVTw-QL.SS700.jpg",
+    "categories": [
+      "Anime",
+      "Gaming Accessories"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T10:24:16.011Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T10:24:16.011Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6576e385fe739b9f622e0e02"
+    },
+    "name": "Cute Anime Backpack",
+    "description": "Carry your essentials in style with this durable backpack featuring anime characters and artwork.",
+    "price": 9899,
+    "image": "1702290309945-O1CN01nY4yHe1HWPi6S4LC5__2209103660765_1024x1024@2x.webp",
+    "categories": [
+      "Anime"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T10:25:09.950Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T10:25:09.950Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6576e40efe739b9f622e0e06"
+    },
+    "name": "Luffy Phone Case",
+    "description": "Protect your phone with a stylish and durable case featuring your favorite anime characters and designs.",
+    "price": 1299,
+    "image": "1702290446401-Dark_Luffy_Art_Glass_Back_Case_for_iPhone_15_Pro-600x600.jpg",
+    "categories": [
+      "Anime",
+      "Electronics"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T10:27:26.405Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T10:27:26.405Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6576e439fe739b9f622e0e0a"
+    },
+    "name": "Minimalist Desk Organizer",
+    "description": "Keep your workspace tidy with this minimalist and functional desk organizer.",
+    "price": 14499,
+    "image": "1702290489472-esq-living-menlo-desk-organizer-grey-1_900x.webp",
+    "categories": [
+      "Office",
+      "Organization"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T10:28:09.476Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T10:28:09.476Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6576e469fe739b9f622e0e0e"
+    },
+    "name": "Portable Solar Charger",
+    "description": "Charge your devices on the go with this portable and eco-friendly solar charger.",
+    "price": 29899,
+    "image": "1702290537463-maxresdefault.jpg",
+    "categories": [
+      "Accessories",
+      "Electronics"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T10:28:57.466Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T10:28:57.466Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6576e4aafe739b9f622e0e12"
+    },
+    "name": "Retro Vinyl Record Player",
+    "description": "Experience the nostalgia of vinyl with this stylish retro vinyl record player.",
+    "price": 58999,
+    "image": "1702290602731-Screen-Shot-2022-01-10-at-1.38.05-PM.webp",
+    "categories": [
+      "Electronics",
+      "Audio"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T10:30:02.736Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T10:30:02.736Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6576e4e1fe739b9f622e0e16"
+    },
+    "name": "Modern Geometric Wall Clock",
+    "description": "Add a contemporary touch to your space with this modern geometric wall clock.",
+    "price": 21499,
+    "image": "1702290657242-WhatsApp Image 2021-07-16 at 12.24.49-550x550.jpeg",
+    "categories": [
+      "Home Decor",
+      "Clocks"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T10:30:57.245Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T10:30:57.245Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6576e517fe739b9f622e0e1a"
+    },
+    "name": "Aerodynamic Drone with HD Camera",
+    "description": "Capture stunning aerial footage with this aerodynamic drone featuring an HD camera.",
+    "price": 88999,
+    "image": "1702290711271-aaa856142600795.626a7f5f4ef6f.gif",
+    "categories": [
+      "Electronics",
+      "Drones"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T10:31:51.295Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T10:31:51.295Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65770ab4fe739b9f622e0e39"
+    },
+    "name": "NIKE SHOES",
+    "description": "crazy and most comfortable shoes",
+    "price": 45700,
+    "image": "1702300340505-photo-1542291026-7eec264c27ff.avif",
+    "categories": [
+      "Footwear"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T13:12:20.510Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T13:12:20.510Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65770b65fe739b9f622e0e51"
+    },
+    "name": "Women's Floral Dress",
+    "description": "Embrace the season with this stylish floral dress for women, perfect for casual outings and special occasions.",
+    "price": 22399,
+    "image": "1702300517021-OD_01_T42_2336K_E4_X_EC_0.webp",
+    "categories": [
+      "Clothing"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T13:15:17.025Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T13:15:17.025Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65770b93fe739b9f622e0e55"
+    },
+    "name": "Gaming Laptop (15.6 inches)",
+    "description": "Unleash the power of gaming with this high-performance laptop, featuring a 15.6-inch display and cutting-edge graphics.",
+    "price": 174999,
+    "image": "1702300563527-na-gaming-laptop-lenovo-original-imag6345sb2jfu2a.webp",
+    "categories": [
+      "Electronics"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T13:16:03.530Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T13:16:03.530Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65770bbefe739b9f622e0e59"
+    },
+    "name": "Organic Green Tea",
+    "description": "Experience the refreshing taste of organic green tea, packed with antioxidants and natural goodness.",
+    "price": 899,
+    "image": "1702300606010-Classic-WITBcopy.webp",
+    "categories": [
+      "Beverages"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T13:16:46.014Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T13:16:46.014Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65770be8fe739b9f622e0e5d"
+    },
+    "name": "Handcrafted Leather Wallet",
+    "description": "Elevate your style with this meticulously handcrafted leather wallet, designed for both elegance and functionality.",
+    "price": 3890,
+    "image": "1702300648966-PSX_20210322_142448-scaled_480x480.webp",
+    "categories": [
+      "Accessories"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T13:17:28.969Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T13:17:28.969Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65770c18fe739b9f622e0e61"
+    },
+    "name": "Smart Home Security Camera",
+    "description": "smart security camera",
+    "price": 45299,
+    "image": "1702300696273-C6_1-3.jpg",
+    "categories": [
+      "Electronics"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T13:18:16.276Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T13:18:16.276Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65770c4dfe739b9f622e0e65"
+    },
+    "name": "Designer Sunglasses",
+    "description": "Shield your eyes in style with these designer sunglasses, featuring UV protection and a fashionable design.",
+    "price": 8799,
+    "image": "1702300749631-dg_women_sg_ad_bfe374cd-1dc6-4a5c-b2b8-fd05b88f42a3_900x.webp",
+    "categories": [
+      "Accessories"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T13:19:09.634Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T13:19:09.634Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65770c75fe739b9f622e0e69"
+    },
+    "name": "BIKINI",
+    "description": "latest and cutting edge designer wear",
+    "price": 56400,
+    "image": "1702300789970-zoom_0-1459146623.webp",
+    "categories": [
+      "Swimwear"
+    ],
+    "createdAt": {
+      "$date": "2023-12-11T13:19:49.973Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T13:19:49.973Z"
+    },
+    "__v": 0
+  }
+]
