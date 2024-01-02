@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { useSelector } from 'react-redux';
+import { useSelector } from "react-redux";
 import styled from "styled-components";
 import EditProduct from "./EditProduct";
 import DeleteProduct from "./DeleteProduct";
-import { useLocation, useParams, useNavigate } from 'react-router-dom';
-import ReactPaginate from 'react-paginate';
+import { useLocation, useParams, useNavigate } from "react-router-dom";
+import {
+  MenuItem,
+  FormControl,
+  InputLabel,
+  Select as MuiSelect,
+} from "@mui/material";
+import ReactPaginate from "react-paginate";
 
 const Info = styled.div`
   opacity: 0;
@@ -88,11 +94,6 @@ const ProductName = styled.span`
   text-transform: uppercase;
 `;
 
-const Select = styled.select`
-  padding: 10px;
-  margin-right: 20px;
-`;
-
 const Sort = styled.div`
   position: relative;
   top: -30px;
@@ -100,20 +101,23 @@ const Sort = styled.div`
   font-weight: 400;
   text-transform: uppercase;
   z-index: 1;
-`;
 
-const SortText = styled.span`
-  font-size: 15px;
-  font-weight: 400;
-  padding: 5px;
+  .MuiFormControl-root {
+    width: 20%;
+    text-align: center;
+  }
+
+  .MuiInputBase-root {
+    width: 100%;
+  }
 `;
 
 const Button = styled.button`
-    padding: 10px;
-    font-size: 15px;
-    background-color: white;
-    cursor: pointer;
-`
+  padding: 10px;
+  font-size: 15px;
+  background-color: white;
+  cursor: pointer;
+`;
 
 const PaginationContainer = styled.div`
   margin-top: 20px;
@@ -135,7 +139,7 @@ const Pagination = styled(ReactPaginate)`
     transition: background-color 0.3s ease;
 
     &:hover {
-      background-color: #90E4C1;
+      background-color: #90e4c1;
     }
   }
 
@@ -153,7 +157,8 @@ const Pagination = styled(ReactPaginate)`
     cursor: default;
   }
 
-  .previous, .next {
+  .previous,
+  .next {
     margin: 0 10px;
     cursor: pointer;
     font-size: 16px;
@@ -165,12 +170,12 @@ const Pagination = styled(ReactPaginate)`
     color: #333;
 
     &:hover {
-      background-color: #90E4C1;
+      background-color: #90e4c1;
     }
 
     &.disabled {
       cursor: not-allowed;
-      color: #D3D3D3;
+      color: #d3d3d3;
       background-color: #fff;
     }
   }
@@ -184,48 +189,48 @@ const ProductsList = () => {
   const navigate = useNavigate();
 
   const data = useSelector((state) => {
-    return [state.customer.isLogin, state.supplierLogin.supplierLogin, state.products.data]
+    return [
+      state.customer.isLogin,
+      state.supplierLogin.supplierLogin,
+      state.products.data,
+    ];
   });
 
   const [isLogin, supplierLogin, productsData] = data;
   const [filteredProducts, setFilteredProducts] = useState([...productsData]);
   const [currentPage, setCurrentPage] = useState(0);
-  const [sort, setSort] = useState("newest");
+  const [sort, setSort] = useState("newlyAdded");
 
   useEffect(() => {
-    const queryParams = new URLSearchParams(location.search);
-    const selectedCategories = queryParams.get('categories') || categories;
+    //const queryParams = new URLSearchParams(location.search);
+    //const selectedCategories = queryParams.get('categories') || categories;
 
-    let updatedFilteredProducts = [...productsData];
+    fetchBackendData(sort);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location.search, categories, sort]);
 
-    if (selectedCategories) {
-      const categoriesArray = selectedCategories.split(',');
-      updatedFilteredProducts = productsData.filter((product) =>
-        product.categories.some((category) => categoriesArray.includes(category))
-      );
+  const fetchBackendData = async (sortOption) => {
+    try {
+      const response = await fetch(`/api/products?sort=${sortOption}`);
+      console.log("FB RESPONSE ->", response);
+      const data = await response.json();
+      setFilteredProducts(data);
+      navigate(`/products?sort=${sortOption}`, { replace: true });
+    } catch (error) {
+      console.error(error);
     }
-
-    // Sorting logic
-    if (sort === "newest") {
-      updatedFilteredProducts = updatedFilteredProducts.sort((a, b) => a.createdAt - b.createdAt);
-    } else if (sort === "asc") {
-      updatedFilteredProducts = updatedFilteredProducts.sort((a, b) => a.price - b.price);
-    } else {
-      updatedFilteredProducts = updatedFilteredProducts.sort((a, b) => b.price - a.price);
-    }
-
-    setFilteredProducts(updatedFilteredProducts);
-  }, [location.search, categories, sort, productsData]);
+  };
 
   const handleSortChange = (e) => {
-    setSort(e.target.value);
+    const newSortOption = e.target.value;
+    setSort(newSortOption);
   };
 
   const handleClick = (productId) => {
     if (isLogin) {
       navigate(`/singleProduct/${productId}`);
     } else {
-      navigate('/auth/login');
+      navigate("/auth/login");
     }
   };
 
@@ -241,15 +246,25 @@ const ProductsList = () => {
   return (
     <>
       <div className="row py-5">
-        {/* Sorting dropdown (conditionally rendered) */}
         {(isLogin || supplierLogin) && (
           <Sort>
-            <SortText>Sort By:</SortText>
-            <Select onChange={handleSortChange} value={sort}>
-              <option value="newest">NEWEST</option>
-              <option value="asc">PRICE (LOW TO HIGH)</option>
-              <option value="desc">PRICE (HIGH TO LOW)</option>
-            </Select>
+            <FormControl>
+              <InputLabel htmlFor="sort">Sort By</InputLabel>
+              <MuiSelect
+                label="Sort By"
+                value={sort}
+                onChange={handleSortChange}
+                inputProps={{
+                  name: "sort",
+                  id: "sort",
+                }}
+                MenuProps={{ anchorOrigin: { vertical: "bottom", horizontal: "center" } }}
+              >
+                <MenuItem value="newlyAdded">NEWLY ADDED</MenuItem><br />
+                <MenuItem value="lowToHigh">PRICE (LOW TO HIGH)</MenuItem><br />
+                <MenuItem value="highToLow">PRICE (HIGH TO LOW)</MenuItem><br />
+              </MuiSelect>
+            </FormControl>
           </Sort>
         )}
 
@@ -281,7 +296,7 @@ const ProductsList = () => {
                 {/* <Description>{product.description}</Description> */}
                 {(isLogin && !supplierLogin) || !supplierLogin ? (
                   <Button onClick={() => handleClick(product._id)}>
-                    {isLogin ? 'VIEW DETAILS' : 'LOGIN TO VIEW'}
+                    {isLogin ? "VIEW DETAILS" : "LOGIN TO VIEW"}
                   </Button>
                 ) : null}
               </Info>
