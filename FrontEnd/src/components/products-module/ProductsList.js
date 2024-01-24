@@ -240,6 +240,7 @@ const ProductsList = () => {
 
   const paginatedProducts = filteredProducts.slice(
     currentPage * PAGE_SIZE,
+    
     (currentPage + 1) * PAGE_SIZE
   );
 
@@ -270,7 +271,7 @@ const ProductsList = () => {
 
         {/* Product cards */}
         {paginatedProducts.map((product, i) => (
-          <div className="col-lg-3 my-3 py-3 py-sm-0" key={i}>
+          <div className="col-lg-4 my-3 py-3 py-sm-0" key={i}>
             <Container>
               <Design />
               <Image

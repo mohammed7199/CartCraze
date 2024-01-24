@@ -58,7 +58,7 @@ const Products = () => {
       <Row>
         <div className="col-12 pt-5">
           <AnimatedHeading
-            type="h3"
+            type="h4"
             title={`DISCOVER A WORLD OF CHOICES: EXPLORE OUR COLLECTION OF ${productsData.length} EXCLUSIVE ITEMS!`}
           />
           <ProductsList />
